@@ -1,7 +1,7 @@
 function runHomoCompute(img_idx)
 OUTPUT_DIR = '/Pulsar3/rohit.girdhar/topK_experiments/homos/results/';
 OUTF = strcat(OUTPUT_DIR, 'homo_', int2str(img_idx), '.txt');
-delete OUTF;
+delete(OUTF);
 N = 285;
 I = imread(strcat('Images_sc/', sprintf('%08d', img_idx), '.jpg'));
 for j = 0 : N-1
